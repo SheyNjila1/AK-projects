@@ -50,8 +50,8 @@ export class EksClusterStack extends cdk.Stack {
 
 // App entry point
 const app = new cdk.App();
-const envProd = { account: '812714054388', region: 'us-east-1' };
-const envDev = { account: '812714054388', region: 'us-east-2' };
+const envProd = { account: 'YOUR AWS ACCOUNT ID', region: 'us-east-2' };
+const envDev = { account: 'YOUR AWS ACCOUNT ID', region: 'us-east-2' };
 
 new EksClusterStack(app, 'ProdEksClusterStack', {
   env: envProd,

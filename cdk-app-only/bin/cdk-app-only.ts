@@ -11,8 +11,8 @@ const rawConfig = fs.readFileSync(configFile);
 const clusterConfig = JSON.parse(rawConfig.toString());
 
 const app = new cdk.App();
-const envProd = { account: '812714054388', region: 'us-east-2' };
-const envDev = { account: '812714054388', region: 'us-east-2' };
+const envProd = { account: 'YOUR AWS ACCOUNT ID', region: 'us-east-2' };
+const envDev = { account: 'YOUR AWS ACCOUNT ID', region: 'us-east-2' };
 
 new EksClusterStack(app, 'ProdEksClusterStack', {
   env: envProd,
@@ -28,10 +28,6 @@ app.synth();
 
 
 
-
-// const app = new cdk.App();
-// const envProd = { account: '812714054388', region: 'us-east-2' };
-// const envDev = { account: '812714054388', region: 'us-east-2' };
 
 
 
