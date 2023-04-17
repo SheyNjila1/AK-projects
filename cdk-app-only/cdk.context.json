@@ -29,10 +29,10 @@
     "albController": true,
     "clusterLogging": true
   },
-  "vpc-provider:account=812714054388:filter.vpc-id=vpc-088764069a4dedbd7:region=us-east-2:returnAsymmetricSubnets=true": {
+  "vpc-provider:account=XXXXXXXXXXXXXXX:filter.vpc-id=vpc-088764069a4dedbd7:region=us-east-2:returnAsymmetricSubnets=true": {
     "vpcId": "vpc-088764069a4dedbd7",
     "vpcCidrBlock": "10.0.0.0/16",
-    "ownerAccountId": "812714054388",
+    "ownerAccountId": "XXXXXXXXXXX",
     "availabilityZones": [],
     "subnetGroups": [
       {
@@ -97,10 +97,10 @@
       }
     ]
   },
-  "vpc-provider:account=812714054388:filter.vpc-id=vpc-0b62fd9e472cc52d6:region=us-east-2:returnAsymmetricSubnets=true": {
+  "vpc-provider:account=XXXXXXXXXXXX:filter.vpc-id=vpc-0b62fd9e472cc52d6:region=us-east-2:returnAsymmetricSubnets=true": {
     "vpcId": "vpc-0b62fd9e472cc52d6",
     "vpcCidrBlock": "10.0.0.0/16",
-    "ownerAccountId": "812714054388",
+    "ownerAccountId": "XXXXXXXXXXXXXXX",
     "availabilityZones": [],
     "subnetGroups": [
       {
@@ -171,10 +171,10 @@
       }
     ]
   },
-  "vpc-provider:account=812714054388:filter.vpc-id=vpc-09f29208d0400d023:region=us-east-2:returnAsymmetricSubnets=true": {
+  "vpc-provider:account=XXXXXXXXXXXXXX:filter.vpc-id=vpc-09f29208d0400d023:region=us-east-2:returnAsymmetricSubnets=true": {
     "vpcId": "vpc-09f29208d0400d023",
     "vpcCidrBlock": "10.0.0.0/16",
-    "ownerAccountId": "812714054388",
+    "ownerAccountId": "XXXXXXXXXXX",
     "availabilityZones": [],
     "subnetGroups": [
       {
