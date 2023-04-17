@@ -1,0 +1,26 @@
+{
+ "prod": {
+   "name": "my-eks-cluster-prod",
+   "region": "us-east-2",
+   "vpcId": "vpc-09f29208d0400d023",
+   "subnets": ["subnet-0ac8b293cc5faa32a", "subnet-081a94271df26f100"],
+   "minCapacity": 1,
+   "maxCapacity": 2,
+   "instanceType": "m3.medium",
+   "kubernetesVersion": "1.21",
+   "albController": true,
+   "clusterLogging": true
+ },
+ "dev": {
+   "name": "my-eks-cluster-dev",
+   "region": "us-east-2",
+   "vpcId": "vpc-0b62fd9e472cc52d6",
+   "subnets": ["subnet-03000c9027651a043", "subnet-0040b38ff9033e2c7"],
+   "minCapacity": 1,
+   "maxCapacity": 2,
+   "instanceType": "m3.medium",
+   "kubernetesVersion": "1.21",
+   "albController": true,
+   "clusterLogging": true
+ }
+}

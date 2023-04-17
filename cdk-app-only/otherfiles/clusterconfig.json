@@ -1,0 +1,61 @@
+interface ClusterConfig {
+  name: string;
+  region: string;
+  vpcId: string;
+  subnets: string[];
+  minCapacity: number;
+  maxCapacity: number;
+  instanceType: string;
+  kubernetesVersion: string;
+  albController: boolean;
+  clusterLogging: boolean;
+}
+
+const jsonData = `{
+  "clusterConfigs": {
+    "prod": {
+      "name": "my-eks-cluster-prod",
+      "region": "us-east-1",
+      "vpcId": "vpc-oe47dc5465e92c223",
+      "subnets": ["subnet-12345678", "subnet-23456789"],
+      "minCapacity": 2,
+      "maxCapacity": 4,
+      "instanceType": "m5.xlarge",
+      "kubernetesVersion": "1.21",
+      "albController": true,
+      "clusterLogging": true
+    },
+    "dev": {
+      "name": "my-eks-cluster-dev",
+      "region": "us-east-1",
+      "vpcId": "vpc-oe47dc5465e92c223",
+      "subnets": ["subnet-34567890", "subnet-45678901"],
+      "minCapacity": 1,
+      "maxCapacity": 10,
+      "instanceType": "m5a.large",
+      "kubernetesVersion": "1.21",
+      "albController": true,
+      "clusterLogging": true
+    }
+  }
+}`;
+
+{
+  "app": "npx ts-node bin/app.ts",
+  "context": {
+    "@aws-cdk/core:enableStackNameDuplicates": "true"
+  },
+  "env": {
+    "account": "123456789012",
+    "region": "us-east-2"
+  }
+}
+
+const parsedData: { clusterConfigs: { [key: string]: ClusterConfig } } = JSON.parse(jsonData);
+
+
+
+// In this example, the ClusterConfig interface is kept separate from the JSON data. 
+// The JSON data is stored in a string constant jsonData. Then, JSON.parse() is used to parse the JSON string, 
+// and the parsed data is stored in a constant parsedData with the expected type { clusterConfigs: { [key: string]: ClusterConfig } }.
+

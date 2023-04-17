@@ -1,0 +1,9 @@
+{
+  "app": "npx ts-node --prefer-ts-exts --transpile-only --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\" bin/cdk-app-only.ts",
+  "context": {
+    "@aws-cdk/core:newStyleStackSynthesis": true
+  },
+    "prod": "cluster-config.json",
+    "dev": "cluster-config.json"
+  }
+
